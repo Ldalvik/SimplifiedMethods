@@ -13,11 +13,6 @@ public class MainActivity extends Activity
 super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 }
-		protected Context context;
-		public String text;
-		public void goToActivity(Context context){
-			this.context=context;
-		}
 			
 		
 		
@@ -29,5 +24,11 @@ public void makeToastSHORT(View v){ toast.makeToastShort(this, "Short Toast!"); 
 
 public void makeToastLONG(View v){ toast.makeToastLong(this, "Long Toast!"); }
 
-public void i(View v){}
+
+
+
+
+
+	public void openSharedPrefs(View v){ startActivity(new Intent(MainActivity.this, GetText.class)); }
+	
 }

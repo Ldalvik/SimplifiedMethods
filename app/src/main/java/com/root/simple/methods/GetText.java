@@ -10,7 +10,7 @@ public class GetText extends Activity
 {
 	TextView textview;
 	EditText edittext;
-	
+	int savedText;
     @Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -18,24 +18,23 @@ public class GetText extends Activity
 		textview = (TextView)findViewById(R.id.textview);
 		edittext = (EditText)findViewById(R.id.edittext);
 		loadSavedPreferences();
-		textview.setText(String.valueOf(savedText));
 }
-int savedText;
+
 
 public void saveText(View v){
 	
  SharedPreferences userDetails = getSharedPreferences("changeText", Context.MODE_PRIVATE);
 		 SharedPreferences.Editor editor=userDetails.edit();
 		 editor.putString("savedText",edittext.getText().toString());
-		 String savedText = userDetails.getString("savedText", "");
-		 textview.setText(savedText);
+		 String savedText = userDetails.getString("savedText", "Saved!");
+		 textview.setText(String.valueOf(savedText));
 		 editor.commit();
 	}
 	
 	public void loadSavedPreferences(){
 	 SharedPreferences userDetails = this.getSharedPreferences("changeText", Context.MODE_PRIVATE);
 	 String savedText = userDetails.getString("savedText", "");
-	 textview.setText((String.valueOf(savedText)));
+	 textview.setText(String.valueOf(savedText));
 	 }
 	
 }

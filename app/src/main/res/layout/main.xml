@@ -1,11 +1,56 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="Toast Short"
+		android:onClick="makeToastSHORT"
+		android:layout_marginTop="100dp"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="Toast Long"
+		android:onClick="makeToastLONG"/>
+
+	<Button
+		android:text="Open Url"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="openUrl"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="New Activity"
+		android:onClick="openActivity"
+		android:layout_marginBottom="15dp"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Shared Preferences"
+			android:layout_weight="1.0"
+			android:onClick="openSharedPrefs"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Nothing yet"
+			android:layout_weight="1.0"/>
+
+	</LinearLayout>
 
 </LinearLayout>
+
