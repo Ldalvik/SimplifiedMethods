@@ -47,7 +47,8 @@
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="wrap_content"
-			android:text="Nothing yet"
+			android:text="Programmatic Views"
+			android:onClick="openProgramViews"
 			android:layout_weight="1.0"/>
 
 	</LinearLayout>
