@@ -9,12 +9,12 @@ public class int_values{
 		public int two=2;
 		public int three=3;
 		public int four=4;
-		public int five = 5;
+		public int five=5;
 		public int six=6;
 		public int seven=7;
 		public int eight=8;
 		public int nine=9;
-		public int zero = 0;
+		public int zero=0;
 		}
 	public class addition{
 		public int plus1=value+1;

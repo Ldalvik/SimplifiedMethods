@@ -24,7 +24,7 @@ public void makeToastSHORT(View v){ toast.makeToastShort(this, "Short Toast!"); 
 
 public void makeToastLONG(View v){ toast.makeToastLong(this, "Long Toast!"); }
 
-
+public void makeDialog(View v){dialog.showDialog(MainActivity.this, "title", "message", "positive button", "negative button");}
 
 public void openSharedPrefs(View v){ startActivity(new Intent(this, GetText.class)); }
 public void openProgramViews(View v){ startActivity(new Intent(this, programViews.class)); }

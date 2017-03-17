@@ -6,6 +6,7 @@ import android.view.*;
 import android.widget.*;
 import android.widget.LinearLayout.*;
 import android.opengl.*;
+import javax.xml.xpath.*;
 
 public class add_custom_textview extends Activity 
 {
@@ -17,6 +18,8 @@ public class add_custom_textview extends Activity
 	}	
 
 public void add(View v){
+	int i=0;
+	int x=0;
 	String customText;	
 	EditText et1 = (EditText)findViewById(R.id.edittext);
 	LinearLayout secondlayout = (LinearLayout) findViewById(R.id.addCustomLayout);
@@ -24,6 +27,10 @@ public void add(View v){
 	TextView multipleTextViews = new TextView(this);
 	multipleTextViews.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
 	multipleTextViews.setText(customText);
+	if(i>x){
+		i++;
 	secondlayout.addView(multipleTextViews);
-		}
+		new Integer(x+1);
+	}
+	}
 }

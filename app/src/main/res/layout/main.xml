@@ -28,8 +28,13 @@
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
 		android:text="New Activity"
-		android:onClick="openActivity"
-		android:layout_marginBottom="15dp"/>
+		android:onClick="openActivity"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="show dialog"
+		android:onClick="makeDialog"/>
 
 	<LinearLayout
 		android:layout_height="wrap_content"
@@ -58,7 +63,7 @@
 		android:layout_width="wrap_content"
 		android:text="add views"
 		android:onClick="openAddView"/>
-	
+
 	<Button
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"
