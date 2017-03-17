@@ -19,6 +19,7 @@
 		<activity android:name=".SecondActivity" android:label="@string/app_name" />
 		<activity android:name=".GetText" android:label="@string/app_name" />
 		<activity android:name=".programViews" android:label="@string/app_name" />
+		<activity android:name=".add_onclick" android:label="@string/app_name" />
 </application>
 
 </manifest>

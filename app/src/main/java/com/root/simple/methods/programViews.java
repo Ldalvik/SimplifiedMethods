@@ -2,6 +2,7 @@ package com.root.simple.methods;
 
 import android.app.*;
 import android.os.*;
+import android.view.*;
 import android.widget.*;
 import android.widget.LinearLayout.*;
 
@@ -11,7 +12,6 @@ public class programViews extends Activity
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.views);
-	
 	
 	
 	
@@ -31,6 +31,6 @@ public class programViews extends Activity
 		txtview.setId(2);
 
 		layout.addView(txtview);
-	}
-	
+		}
+
 }

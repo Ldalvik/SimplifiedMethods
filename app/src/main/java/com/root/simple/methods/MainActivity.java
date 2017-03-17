@@ -28,4 +28,9 @@ public void makeToastLONG(View v){ toast.makeToastLong(this, "Long Toast!"); }
 
 public void openSharedPrefs(View v){ startActivity(new Intent(this, GetText.class)); }
 public void openProgramViews(View v){ startActivity(new Intent(this, programViews.class)); }
+public void openAddView(View v){ startActivity(new Intent(this, add_onclick.class)); }
+	
+
+
+
 }

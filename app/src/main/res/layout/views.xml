@@ -18,14 +18,16 @@
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
 		android:text="[int].set[the attribute]([value]);"
-		android:background="#6D6D6D"
 		android:gravity="center"
 		android:textColor="#251FBE"
 		android:textStyle="italic"
 		android:padding="10dp"
 		android:layout_marginLeft="15dp"
 		android:layout_marginRight="15dp"
-		android:layout_margin="10dp"/>
+		android:layout_margin="10dp"
+		android:typeface="monospace"
+		android:background="@drawable/codebox"
+		android:paddingBottom="3dp"/>
 
 	<TextView
 		android:layout_height="wrap_content"
@@ -44,7 +46,8 @@
 		android:padding="10dp"
 		android:layout_marginLeft="15dp"
 		android:layout_marginRight="15dp"
-		android:layout_margin="10dp"/>
+		android:layout_margin="10dp"
+		android:typeface="monospace"/>
 
 	<View
 		android:background="?android:attr/dividerVertical"
@@ -57,6 +60,48 @@
 		android:layout_width="match_parent"
 		android:orientation="vertical"
 		android:id="@+id/YourLayout"
+		android:gravity="center"
+		android:layout_gravity="bottom|center"/>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_height="1dp"
+		android:layout_width="match_parent"
+		android:layout_marginBottom="10dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:text="You can make multiple items using if statements."
+		android:gravity="center"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="if(i=0; i&gt;5; i++){\n//the widget code\n}"
+		android:background="#6D6D6D"
+		android:gravity="center"
+		android:textColor="#251FBE"
+		android:textStyle="italic"
+		android:padding="10dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:layout_margin="10dp"
+		android:typeface="monospace"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:text="Remember to call Position if you want to make each button have an onClickListener when using this."
+		android:gravity="center"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:id="@+id/SecondLayout"
 		android:gravity="center"
 		android:layout_gravity="bottom|center"/>
 
